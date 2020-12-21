@@ -1,0 +1,2 @@
+GET http://127.0.0.1:2113/streams/bike-rental/0
+Accept: application/vnd.eventstore.atom+json

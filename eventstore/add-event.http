@@ -1,0 +1,14 @@
+POST http://127.0.0.1:2113/streams/bike-rental
+Content-Type: application/vnd.eventstore.events+json
+
+[
+    {
+        "eventId" : "07734019-4019-4019-4019-160707734011",
+        "eventType" : "RentalRequested",
+        "data" : {
+            "clientId" : "1",
+            "bikeType" : "mountain",
+            "rentalFee" : 600
+        }
+    }
+]

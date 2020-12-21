@@ -1,0 +1,2 @@
+GET http://127.0.0.1:2113/streams/$projections-RentalFees-result/0
+Accept: application/vnd.eventstore.atom+json

@@ -1,0 +1,17 @@
+POST https://api.serialized.io/aggregates/bike-rental/db1e6f38-3609-11eb-adc1-0242ac120001/events
+Content-Type: application/json
+Serialized-Access-Key: <your access key>
+Serialized-Secret-Access-Key: <your secret access key>
+
+{
+    "events" : [
+        {
+            "eventId" : "bdc5a226-3609-11eb-adc1-0242ac120001",
+            "eventType" : "RentalRequested",
+            "data" : {
+                "bikeType" : "mountain",
+                "rentalFee" : 275
+            }
+        }
+    ]
+}

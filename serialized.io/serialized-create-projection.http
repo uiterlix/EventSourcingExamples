@@ -1,0 +1,26 @@
+POST https://api.serialized.io/projections/definitions
+Content-Type: application/json
+Serialized-Access-Key: <your access key>
+Serialized-Secret-Access-Key: <your secret access key>
+
+{
+    "projectionName" : "rentals",
+    "feedName" : "bike-rental",
+    "aggregated" : true,
+    "handlers" : [
+        {
+            "eventType" : "RentalRequested",
+            "functions" : [
+                {
+                    "function" : "add",
+                    "targetSelector" : "$.projection.totalFee",
+                    "eventSelector" : "$.event.rentalFee"
+                },
+                {
+                    "function" : "inc",
+                    "targetSelector" : "$.projection.rentalCount"
+                }
+            ]
+        }
+    ]
+}

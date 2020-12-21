@@ -1,0 +1,4 @@
+GET https://api.serialized.io/projections/rentals
+Content-Type: application/json
+Serialized-Access-Key: <your access key>
+Serialized-Secret-Access-Key: <your secret access key>
